@@ -2,21 +2,21 @@ import {renderHourlyUpdate,renderDailyForecast} from './renderFunction.js';
 // °C
 //setting the src path to right img using weather code 
 const weatherIcons = {
-    0: "/assets/sunny.svg", // clear sky
-    1: "/assets/cloudy.svg", //cloudy sky
-    2: "/assets/cloudy.svg",
-    3: "/assets/cloudy.svg",
-    51: "/assets/rain.svg", //rainy
-    53: "/assets/rain.svg",
-    55: "/assets/rain.svg",
-    61: "/assets/rain.svg",
-    63: "/assets/rain.svg",
-    65: "/assets/rain.svg",
-    66: "/assets/rain.svg",
-    67: "/assets/rain.svg",
-    95: "/assets/thunder.svg", //thunder
-    96: "/assets/thunder.svg",
-    99: "/assets/thunder.svg",
+    0: "assets/sunny.svg", // clear sky
+    1: "assets/cloudy.svg", //cloudy sky
+    2: "assets/cloudy.svg",
+    3: "assets/cloudy.svg",
+    51: "assets/rain.svg", //rainy
+    53: "assets/rain.svg",
+    55: "assets/rain.svg",
+    61: "assets/rain.svg",
+    63: "assets/rain.svg",
+    65: "assets/rain.svg",
+    66: "assets/rain.svg",
+    67: "assets/rain.svg",
+    95: "assets/thunder.svg", //thunder
+    96: "assets/thunder.svg",
+    99: "assets/thunder.svg",
   };
 
 const date = new Date();

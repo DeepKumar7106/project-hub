@@ -44,3 +44,4 @@ projects.forEach((project)=> {
 
     container.appendChild(projectBox);
 });
+
