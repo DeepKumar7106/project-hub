@@ -3,7 +3,7 @@ const projects = [
     {
         id: 'p002',
         name: "Calculator",
-        url: "../tools/calculator/index.html",
+        url: "/tools/calculator/index.html",
         img: "",
         description: "A personal website showcasing my projects and skills.",
         category: "Tools"
@@ -11,7 +11,7 @@ const projects = [
     {
         id: 'p003',
         name: "Weather",
-        url: "../tools/weather-app/index.html", 
+        url: "/tools/weather/index.html", 
         img: "..\projectIcon\cloud.svg",
         description: "A personal website showcasing my projects and skills.",
         category: "Tools"
