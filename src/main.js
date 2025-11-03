@@ -1,24 +1,46 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import projects from "./data.js";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+const categories = [
+    'Tools',
+    'Games',
+    'Mini-Project',
+    'Real-Projects'
+]
 
-setupCounter(document.querySelector('#counter'))
+categories.forEach((title)=> {
+    const main = document.getElementById('main-box');
+    const box = document.createElement('section');
+    const h2 = document.createElement('h2');
+    
+    box.classList.add("box");
+    box.setAttribute('id',title);
+
+    h2.classList.add("section-title");
+    h2.innerHTML = title;
+
+    box.appendChild(h2);
+    main.appendChild(box);
+});
+
+// render individual projects
+
+projects.forEach((project)=> {
+    const container = document.getElementById(project.category);
+    const projectBox = document.createElement('div');
+    projectBox.classList.add("project-box");
+
+
+    projectBox.innerHTML = `
+        <div class="project">
+            <div class="project-img-box">
+                <img src="${project.img}" alt="${project.img}" class="project-img">
+            </div>
+            <div class="project-text-box">
+                <a href="${project.url}" class="project-name">${project.name}</a>
+                <p class="project-description">${project.description}</p>
+            </div>
+        </div>
+    `;
+
+    container.appendChild(projectBox);
+});
