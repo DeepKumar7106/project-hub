@@ -97,7 +97,7 @@ function passValueToRender(data) {
     hourly.time.map((time, i) => {
         const temperature = Math.round(hourly.temperature_2m[i]);
         const hourlyCode = hourly.weather_code[i];
-        const icon = weatherIcons[hourlyCode] || "/cloud.svg";
+        const icon = weatherIcons[hourlyCode] || "public/cloud.svg";
 
         renderHourlyUpdate(temperature, currentHour, icon);
         currentHour = currentHour >= fullDayHours? currentHour - fullDayHours: ++currentHour;
@@ -110,7 +110,7 @@ function passValueToRender(data) {
         const maxTemp = Math.round(daily.temperature_2m_max[i]);
         const minTemp = Math.round(daily.temperature_2m_min[i]);
         const dailyCode = daily.weather_code[i];
-        const icon = weatherIcons[dailyCode] || "/cloud.svg";
+        const icon = weatherIcons[dailyCode] || "public/cloud.svg";
 
         currentDay = currentDay >= weekDays? currentDay - weekDays: ++currentDay;
         renderDailyForecast(day, minTemp, maxTemp, icon)
