@@ -2,13 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/icons/movie.svg" />
+    <link rel="icon" type="image/svg+xml" href="public/movie.svg" />
     <link rel="stylesheet" href="src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>movie-app</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <div id="iconBox">
+        <img src="public/movie.svg" alt="" id="icon">
+        <h2 id="headingText"></h2>
+        <div id="profileBox"><img src="" alt="" id="profileIcon"></div>
+      </div>
+    </header>
+    <main class="center">
+      <section id="titleContent">
+        <h1 id="titleText"></h1>
+        <article id="descriptionText"></article>
+      </section>
+      <section id="searchBox">
+        <div id="searchcontainer">
+          <img src="" alt="" id="searchIcom"><input type="search" id="searchBar">
+          <div id="searchText"></div>
+        </div>
+      </section>
+      <section id="searchResultBox">
+        <div id="resultContainer">
+          <img src="" alt="" id="resultImage">
+          <div id="resultText">
+            <h2 id="movieTitle"></h2>
+            <article id="movieDesc"></article>
+          </div>
+        </div>
+      </section>
+      <section id="recommendations">
+        <div class="recommendContainer">
+          <img src="" alt="" class="recommendImage">
+          <div class="recommendText">
+            <h2 class="recommendMovieTitle"></h2>
+            <article class="recommendMovieDesc"></article>
+          </div>
+        </div>
+        <div class="recommendContainer">
+          <img src="" alt="" class="recommendImage">
+          <div class="recommendText">
+            <h2 class="recommendMovieTitle"></h2>
+            <article class="recommendMovieDesc"></article>
+          </div>
+        </div>
+        <div class="recommendContainer">
+          <img src="" alt="" class="recommendImage">
+          <div class="recommendText">
+            <h2 class="recommendMovieTitle"></h2>
+            <article class="recommendMovieDesc"></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
