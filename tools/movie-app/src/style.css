@@ -25,6 +25,7 @@
   --length-100p:100%;
   --length-90p:90%;
   --length-500:500px;
+  --length-400:400px;
   --length-200:200px;
   --length-100:100px;
   --length-150:150px;
@@ -129,3 +130,128 @@ main {
   background-color: var(--secondary-100);
 }
 
+#searchResultBox {
+  max-height: var(--length-500);
+  width: max(80%, var(--length-500));
+}
+
+#resultContainer {
+  background: linear-gradient(var(--white), var(--primary-100));
+  border-radius: 20px;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  & img {
+    border-radius: inherit;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+  }
+}
+
+#resultText {
+  padding: 30px 20px 10px 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.171), var(--black));
+  color: var(--white);
+  border-radius: 0 0 20px 20px ;
+}
+
+
+#movieTitle {
+  font-size: var(--fs-medium);
+  font-weight: 400;
+  text-align: left;
+  border-bottom: 1px solid var(--white);
+}
+
+#movieDesc {
+  font-size: var(--fs-small);
+  text-align: left;
+  padding: 5px;
+  opacity: 0.8;
+}
+
+
+#recommendations {
+  /* width: max(90%, 500px); */
+  outline: 2px solid black;   
+  width: 100%;
+  /* width: 500px; */
+  margin: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+  &::-webkit-scrollbar {
+      display: none;
+  }
+} 
+
+.recommendContainer {
+  margin: 5px;
+  background: linear-gradient(var(--white), var(--primary-100));
+  border-radius: 20px;
+  height: 300px;
+  width: 200px;
+  position: relative;
+  & img {
+    border-radius: inherit;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+  }
+}
+.recommendText {
+  padding: 30px 20px 10px 20px;
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+  background: linear-gradient(rgba(0, 0, 0, 0.171), var(--black));
+  color: var(--white);
+  border-radius: 0 0 20px 20px ;
+}
+.recommendMovieTitle  {
+  font-size: var(--fs-small);
+  font-weight: 400;
+  text-align: left;
+  border-bottom: 1px solid var(--white);
+}
+
+.recommendMovieDesc  {
+  font-size: 1em;
+  text-align: left;
+  padding: 5px;
+  opacity: 0.8;
+}
+
+
+@media (max-width: 500px) {
+  :root {
+      --length-50p:100%;
+      --length-90p:90%;
+      --length-500:400px;
+      --length-200:150px;
+      --length-150:100px;
+      --length-100:80px;
+      --length-50:50px;
+  
+      --fs-small:1em;
+      --fs-medium:1.2em;
+      /* --fs-large:1.5em; */
+      --fs-xlarge:3em;
+  }
+  
+  /* #recommendations {
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  }  */
+
+}
