@@ -3,16 +3,16 @@ const projects = [
     {
         id: 'p002',
         name: "Calculator",
-        url: "/tools/calculator/index.html",
-        img: "/public/icons/calculator.svg",
+        url: "tools/calculator/index.html",
+        img: "/icons/calculator.svg",
         description: "A personal website showcasing my projects and skills.",
         category: "Tools"
     },
     {
         id: 'p003',
         name: "Weather",
-        url: "/tools/weather/index.html", 
-        img: "/public/icons/cloud.svg",
+        url: "tools/weather/index.html", 
+        img: "/icons/cloud.svg",
         description: "A personal website showcasing my projects and skills.",
         category: "Tools"
     }   

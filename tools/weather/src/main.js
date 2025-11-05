@@ -2,21 +2,21 @@ import {renderHourlyUpdate,renderDailyForecast} from './renderFunction.js';
 // °C
 //setting the src path to right img using weather code 
 const weatherIcons = {
-    0: "assets/sunny.svg", // clear sky
-    1: "assets/cloudy.svg", //cloudy sky
-    2: "assets/cloudy.svg",
-    3: "assets/cloudy.svg",
-    51: "assets/rain.svg", //rainy
-    53: "assets/rain.svg",
-    55: "assets/rain.svg",
-    61: "assets/rain.svg",
-    63: "assets/rain.svg",
-    65: "assets/rain.svg",
-    66: "assets/rain.svg",
-    67: "assets/rain.svg",
-    95: "assets/thunder.svg", //thunder
-    96: "assets/thunder.svg",
-    99: "assets/thunder.svg",
+    0: "public/assets/sunny.svg", // clear sky
+    1: "public/assets/cloudy.svg", //cloudy sky
+    2: "public/assets/cloudy.svg",
+    3: "public/assets/cloudy.svg",
+    51: "public/assets/rain.svg", //rainy
+    53: "public/assets/rain.svg",
+    55: "public/assets/rain.svg",
+    61: "public/assets/rain.svg",
+    63: "public/assets/rain.svg",
+    65: "public/assets/rain.svg",
+    66: "public/assets/rain.svg",
+    67: "public/assets/rain.svg",
+    95: "public/assets/thunder.svg", //thunder
+    96: "public/assets/thunder.svg",
+    99: "public/assets/thunder.svg",
   };
 
 const date = new Date();
@@ -74,16 +74,16 @@ function passValueToRender(data) {
 
     let weatherCondtion = "";
     switch(iconFile) {
-        case "/assets/sunny.svg": 
+        case "public/assets/sunny.svg": 
             weatherCondtion = "Sunny";
             break;
-        case "/assets/cloudy.svg": 
+        case "public/assets/cloudy.svg": 
             weatherCondtion = "Cloudy";
             break;
-        case "/assets/rain.svg": 
+        case "public/assets/rain.svg": 
             weatherCondtion = "Rainy";
             break;
-        case "/assets/thunder.svg": 
+        case "public/assets/thunder.svg": 
             weatherCondtion = "Thunder";
             break;
         default:
