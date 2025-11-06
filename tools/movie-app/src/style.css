@@ -148,13 +148,11 @@ main {
     height: inherit;
     width: inherit;
     object-fit: cover;
-
+    
     opacity: 0.8;
-    filter: blur(2px);
+    filter: blur(1px);
   }
 }
-
-
 
 #resultDetailBox {
   padding: 30px 20px 10px 20px;
@@ -162,10 +160,10 @@ main {
   bottom: 0;
   flex-direction: row;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.171), var(--black));
+  background: linear-gradient(rgba(0, 0, 0, 0.082), var(--black));
   color: var(--white);
   border-radius: 0 0 20px 20px ;
-  flex-direction: row;
+  gap: 20px;
    > img {
     border-radius: 20px;
     height: 100px;
@@ -173,20 +171,40 @@ main {
     object-fit: cover;
   }
 }
-/* 
+
 #redultMovieDetail {
-  flex-direction: row;
-} */
+  flex: 1;
+}
 
 #ratingBox{
   justify-content: start;
   flex-direction: row;
+  gap: 20px;
   & img {
     height: 20px;
     width: 20px;
     object-fit: contain;
   }
 } 
+
+#movieDescBox {
+  margin-top: 20px;
+  width: 100%;
+
+  align-items: start  ;
+  gap: 20px;
+
+  > button {
+    width: var(--button-width);
+    height: var(--button-height);
+    border-radius: calc(var(--button-height) * 0.5);
+    color: var(--white);
+    background-color: var(--primary-400);
+    border: none;
+    font-size: var(--fs-medium);
+  }
+}
+
 
 
 #movieTitle {
