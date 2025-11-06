@@ -15,7 +15,15 @@ const projects = [
         img: "public/icons/cloud.svg",
         description: "A personal website showcasing my projects and skills.",
         category: "Tools"
-    }   
+    },
+    {
+        id: 'p004',
+        name: "Movi3",
+        url: "tools/movie-app/index.html", 
+        img: "public/icons/movie.svg",
+        description: "A personal website showcasing my projects and skills.",
+        category: "Mini-Project"
+    } 
     // },
     // {
     //     id: 2,
