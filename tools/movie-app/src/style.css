@@ -108,7 +108,7 @@ main {
   background-color: var(--primary-300);
   flex-direction: row;
   padding-left: 5px;
-  & img {
+  > img {
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -131,33 +131,62 @@ main {
 }
 
 #searchResultBox {
-  max-height: var(--length-500);
+  min-height: var(--length-500);
   width: max(80%, var(--length-500));
+  background: linear-gradient(var(--white), var(--primary-100));
+  padding: 10px;
+  border-radius: 30px;
 }
 
 #resultContainer {
-  background: linear-gradient(var(--white), var(--primary-100));
   border-radius: 20px;
   height: 400px;
   width: 100%;
   position: relative;
-  & img {
+  > img {
     border-radius: inherit;
     height: inherit;
     width: inherit;
     object-fit: cover;
+
+    opacity: 0.8;
+    filter: blur(2px);
   }
 }
 
-#resultText {
+
+
+#resultDetailBox {
   padding: 30px 20px 10px 20px;
   position: absolute;
   bottom: 0;
+  flex-direction: row;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.171), var(--black));
   color: var(--white);
   border-radius: 0 0 20px 20px ;
+  flex-direction: row;
+   > img {
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
 }
+/* 
+#redultMovieDetail {
+  flex-direction: row;
+} */
+
+#ratingBox{
+  justify-content: start;
+  flex-direction: row;
+  & img {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+  }
+} 
 
 
 #movieTitle {
