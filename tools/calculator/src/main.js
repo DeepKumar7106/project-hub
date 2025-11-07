@@ -1,5 +1,3 @@
-import {evaluate} from "mathjs";
-import './style.css'
 //fix evaluation of expression within the parenthesis and 
 //display well defined error messages
 const operators = document.querySelectorAll('.operators');
@@ -47,7 +45,7 @@ operands.forEach(operand => {
 function evaluateAndUpdate(expression) {
     try{
         // if(previousValue === "%")
-        return evaluate(expression);
+        return eval(expression);
     }
     catch (error) {
         console.error(error.message);

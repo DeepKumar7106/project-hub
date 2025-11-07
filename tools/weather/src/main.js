@@ -42,7 +42,10 @@ const days = ['Sun','Mon','Tue','Wed','Thur','Fri','Sat']
 // }
 
 async function getWeather() {
-    const url = 'https://api.open-meteo.com/v1/forecast?latitude=19.0728&longitude=72.8826&daily=weather_code,temperature_2m_max,temperature_2m_min,apparent_temperature_max,apparent_temperature_min,sunrise,sunset,daylight_duration,rain_sum,showers_sum&hourly=temperature_2m,rain,weather_code,apparent_temperature,is_day,sunshine_duration,showers,uv_index_clear_sky,uv_index&current=temperature_2m,apparent_temperature,is_day,rain,weather_code,wind_speed_10m,wind_direction_10m,showers,relative_humidity_2m,cloud_cover&timezone=Asia%2FBangkok';
+    const long = 13.270868;
+    const lat = 74.749027;
+
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${long}&longitude=${lat}&daily=weather_code,temperature_2m_max,temperature_2m_min,apparent_temperature_max,apparent_temperature_min,sunrise,sunset,daylight_duration,rain_sum,showers_sum&hourly=temperature_2m,rain,weather_code,apparent_temperature,is_day,sunshine_duration,showers,uv_index_clear_sky,uv_index&current=temperature_2m,apparent_temperature,is_day,rain,weather_code,wind_speed_10m,wind_direction_10m,showers,relative_humidity_2m,cloud_cover&timezone=Asia%2FBangkok`;
     
     const res = await fetch(url);
     const data = await res.json();
