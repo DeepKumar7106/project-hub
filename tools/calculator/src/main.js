@@ -1,4 +1,4 @@
-import { evaluate } from "mathjs";
+import { evaluate } from "../node_modules/mathjs";
 import { evalExpression } from "./calculate";
 
 //fix evaluation of expression within the parenthesis and 
