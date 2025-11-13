@@ -1,3 +1,6 @@
+import { evaluate } from "mathjs";
+import { evalExpression } from "./calculate";
+
 //fix evaluation of expression within the parenthesis and 
 //display well defined error messages
 const operators = document.querySelectorAll('.operators');
@@ -42,14 +45,25 @@ operands.forEach(operand => {
     })  
 })
 
+let previousResult = 0;
 function evaluateAndUpdate(expression) {
-    try{
-        // if(previousValue === "%")
-        return eval(expression);
-    }
-    catch (error) {
-        console.error(error.message);
-    }
+    let result = evaluate(expression); 
+    console.log(result)
+    if(result !== 'undefined')
+        previousResult = result;
+    return evaluate(expression);
+    // try{
+    //     // if(previousValue === "%")
+    //     let result = evaluate(expression); 
+    //     console.log(result)
+    //     if(result !== 'undefined')
+    //         previousResult = result;
+    //     return previousResult;
+    //     // return evalExpression(expression);
+    // }
+    // catch (error) {
+    //     console.error(error.message);
+    // }
 }
 
 function renderExpression(resultString) {
