@@ -3,7 +3,7 @@ const projects = [
     {
         id: 'p002',
         name: "Calculator",
-        url: "tools/calculator/index.html",
+        url: "https://deepkumar7106.github.io/calculator/",
         img: "public/icons/calculator.svg",
         description: "A personal website showcasing my projects and skills.",
         category: "Tools"
@@ -11,7 +11,7 @@ const projects = [
     {
         id: 'p003',
         name: "Weather",
-        url: "tools/weather/index.html", 
+        url: "https://deepkumar7106.github.io/weather/", 
         img: "public/icons/cloud.svg",
         description: "A personal website showcasing my projects and skills.",
         category: "Tools"
@@ -19,7 +19,7 @@ const projects = [
     {
         id: 'p004',
         name: "Movi3",
-        url: "tools/movie-app/index.html", 
+        url: "https://deepkumar7106.github.io/movie/", 
         img: "public/icons/movie.svg",
         description: "A personal website showcasing my projects and skills.",
         category: "Mini-Project"
